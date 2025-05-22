@@ -1,4 +1,3 @@
-
 window.onload = function () {
   var slides = document.querySelectorAll(".carruselcontenido .slide");
   var btnAnterior = document.getElementById("btn-anterior");

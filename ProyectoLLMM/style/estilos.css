@@ -10,6 +10,7 @@ body {
     background-position: center;
     font-family: 'Open Sans', sans-serif;
 }
+
 header {
     background-color: #2a7a2a;
     color: white;
@@ -19,11 +20,26 @@ header {
 }
 .EventoMedio {
     text-align: center;
+    font-size: 3.2em;
     
 }
 h1 , h2, h3 {
 font-family:'Times New Roman', Times, serif;
- font-size: 2.0em; 
+ font-size: 2.5em; 
+}
+h1 {
+    animation: mover-izquierda-derecha 4s;
+    animation-fill-mode: forwards;
+    color: black;
+
+}
+@keyframes mover-izquierda-derecha {
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(-10px);
+    }
 }
 
 .menu-principal {
@@ -244,6 +260,23 @@ button:hover {
         padding: 0 0.5rem;
     }
 }
+.tipotexto {
+    border-right: .15em solid transparent; 
+  white-space: nowrap;
+  overflow: hidden; 
+  display: inline-block; 
+  animation: typing 6s steps(40, end) forwards, blink .5s step-end infinite alternate; 
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 250%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
 
 @font-face {
     font-family: 'Open Sans';
